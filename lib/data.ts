@@ -7,6 +7,8 @@ import recommender from "@/public/recommender2.png";
 import cricksion from "@/public/cricksion.png";
 import z61 from "@/public/Z612.png";
 import n11 from "@/public/N112.png";
+import bamberg from "@/public/bamberg2.png";
+import caritas from "@/public/caritas2.jpg";
 
 export const links = [
   {
@@ -107,6 +109,26 @@ export const researchData = [
       "Designed a decision tree-based diagnostic model with 94% accuracy to detect lung cancer at an early stage.",
     tags: [""],
     imageUrl: n11,
+    link: "",
+  },
+] as const;
+
+
+export const cocurricularData = [
+  {
+    title: "Caritas Kol",
+    description:
+      "Founded and led a youth-driven social activism group, mobilizing 100+ volunteers and executing 10+ large-scale campaigns, benefiting 2,000+ individuals.",
+    tags: [""],
+    imageUrl: caritas,
+    link: "https://github.com/caritaskol/caritaskol",
+  },
+  {
+    title: "German Youth Camp",
+    description:
+      "Selected as one of India's top 10 students for a fully funded three-week immersive program at the Goethe-Institut, collaborating with 74 international peers in cultural exchange.",
+    tags: [""],
+    imageUrl: bamberg,
     link: "",
   },
 ] as const;
