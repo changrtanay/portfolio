@@ -116,7 +116,7 @@ export const researchData = [
 
 export const cocurricularData = [
   {
-    title: "Caritas Kol",
+    title: "🔗Caritas Kol",
     description:
       "Founded and led a youth-driven social activism group, mobilizing 100+ volunteers and executing 10+ large-scale campaigns, benefiting 2,000+ individuals.",
     tags: [""],
