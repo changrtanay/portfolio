@@ -24,13 +24,20 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 
 ## Setup Instructions
 
-1. Clone the repository.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/changrtanay/portfolio.git
+   cd portfolio
+   ```
 2. Install dependencies:
-   ```sh
+   ```bash
    npm install
    ```
-3. Add the `RESEND_API_KEY` environment variable in `.env.local`
-4. Open `http://localhost:3000` in your browser.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and navigate to `http://localhost:3000`
 
 ## Connect with Me
 
