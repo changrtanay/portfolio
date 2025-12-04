@@ -164,7 +164,7 @@ export const cocurricularData = [
   {
     title: "Build Fest'25",
     description:
-      "Presented project at the Hackathon Finals at IIT Bombay, selected among the top 41 teams out of 3400+ participants.",
+      "Presented our project at the Hackathon Finals at IIT Bombay, selected among the top 41 teams out of 3400+ participants.",
     tags: [""],
     imageUrl: buildfest,
     link: "https://drive.google.com/file/d/1jFgju7WNVDqbZuDEVu7ChXt65H1-jsLH/view?usp=sharing",
@@ -178,7 +178,7 @@ export const cocurricularData = [
     link: "https://github.com/caritaskol/caritaskol",
   },
   {
-    title: "German Youth Camp",
+    title: "Youth Camp, Germany",
     description:
       "Selected as one of India's top 10 students for a fully funded three-week immersive program at the Goethe-Institut, collaborating with 74 international peers in cultural exchange.",
     tags: [""],
