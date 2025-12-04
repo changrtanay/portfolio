@@ -43,7 +43,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "🔗Kalinga Institute of Industrial Technology",
+    title: "Kalinga Institute of Industrial Technology",
     location: "CGPA: 8.6",
     description:
       "Awarded KIITEE Merit Scholarship for academic excellence and consistent performance.",
@@ -52,7 +52,7 @@ export const experiencesData = [
     link: "https://drive.google.com/file/d/1WVIfQCIo6K1yC20Slg23YAf1xILSz2F4/view?usp=sharing",
   },
   {
-    title: "🔗Rajiv Creation Pvt. Ltd.",
+    title: "Rajiv Creation Pvt. Ltd.",
     location: "Software Development Intern",
     description:
       "Developed a modern fashion eCommerce platform using React.js, MongoDB, Express.js, Stripe, and Docker.",
@@ -61,7 +61,7 @@ export const experiencesData = [
     link: "https://github.com/changrtanay/rcpl-demo",
   },
   {
-    title: "🔗IIT Indore",
+    title: "IIT Indore",
     location: "Research Intern",
     description:
       "Developed the official site of the IEEE Signal Processing Society (SPS) Chapter of Madhya Pradesh on React.js, Node.js, and Framer Motion.",
@@ -70,7 +70,7 @@ export const experiencesData = [
     link: "https://github.com/changrtanay/ieee-sps-mp-demo",
   },
   {
-    title: "🔗IIT Kharagpur",
+    title: "IIT Kharagpur",
     location: "Research Intern",
     description:
       "Developed a legal research platform powered by AI that allows semantic search, automated summarization, and conversational querying of Indian court judgements.",
@@ -90,7 +90,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "🔗TenSense",
+    title: "TenSense",
     description:
       "Analyzes Tennis players in a video to measure their speed, ball shot speed, and the number of shots.",
     tags: ["Python", "PyTorch", "OpenCV", "Ultralytics", "YOLOv8"],
@@ -98,7 +98,7 @@ export const projectsData = [
     link: "https://github.com/changrtanay/TenSense",
   },
   {
-    title: "🔗ForeSight",
+    title: "ForeSight",
     description:
       "Cleaning, Forecasting, and Policy Analysis on the World Bank's Development Indicators Dataset.",
     tags: ["Python", "Streamlit", "Facebook Prophet", "Plotly"],
@@ -106,7 +106,7 @@ export const projectsData = [
     link: "https://github.com/changrtanay/ForeSight",
   },
   {
-    title: "🔗InventoVision",
+    title: "InventoVision",
     description:
       "Helps retailers optimize inventory by demand forecasting, stock management, and pricing strategies using machine learning.",
     tags: ["Python", "scikit-learn", "Power BI", "Pandas", "NumPy"],
@@ -114,7 +114,7 @@ export const projectsData = [
     link: "https://github.com/changrtanay/InventoVision",
   },
   {
-    title: "🔗Docks",
+    title: "Docks",
     description:
       "Real-time document collaboration platform allowing multiple users to edit documents at the same time.",
     tags: ["React", "Express", "Docker", "MongoDB", "Socket.io"],
@@ -122,7 +122,7 @@ export const projectsData = [
     link: "https://github.com/changrtanay/docksv4",
   },
   // {
-  //   title: "🔗Recommender",
+  //   title: "Recommender",
   //   description:
   //     "Hybrid Recommendation System. I combined rating-based filtering, content-based filtering, and collaborative filtering.",
   //   tags: ["Python", "Pandas", "NumPy", "scikit-learn", "spaCy"],
@@ -130,7 +130,7 @@ export const projectsData = [
   //   link: "https://github.com/changrtanay/recommendation-engine",
   // },
   // {
-  //   title: "🔗Cricksion",
+  //   title: "Cricksion",
   //   description:
   //     "A google chrome extension to know live cricket updates with the click of a button.",
   //   tags: ["HTML", "CSS", "JavaScript"],
@@ -162,7 +162,7 @@ export const researchData = [
 
 export const cocurricularData = [
   {
-    title: "🔗Build Fest'25",
+    title: "Build Fest'25",
     description:
       "Presented project at the Hackathon Finals at IIT Bombay, selected among the top 41 teams out of 3400+ participants.",
     tags: [""],
@@ -170,7 +170,7 @@ export const cocurricularData = [
     link: "https://drive.google.com/file/d/1jFgju7WNVDqbZuDEVu7ChXt65H1-jsLH/view?usp=sharing",
   },
   {
-    title: "🔗Caritas Kol",
+    title: "Caritas Kol",
     description:
       "Founded and led a youth-driven social activism group, mobilizing 100+ volunteers and executing 10+ large-scale campaigns, benefiting 2,000+ individuals.",
     tags: [""],

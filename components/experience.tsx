@@ -11,6 +11,7 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -46,7 +47,10 @@ export default function Experience() {
               }}
             >
               <Link href={item.link} target="_blank" rel="noopener noreferrer">
-                <h3 className="font-semibold capitalize">{item.title}</h3>
+                <h3 className="font-semibold capitalize flex items-center">
+                  {item.link && <FaExternalLinkAlt className="mr-2 text-gray-700 dark:text-white" />}
+                  {item.title}
+                </h3>
                 <p className="font-normal !mt-0">{item.location}</p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                   {item.description}
