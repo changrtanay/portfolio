@@ -7,11 +7,11 @@ import CoCurricular from "./cocurricular";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function CoCurriculars() {
-  // const { ref } = useSectionInView("", 0.5);
+  const { ref } = useSectionInView("Experience", 0.5);
 
   return (
-    // <section ref={ref} id="" className="scroll-mt-28 mb-28">
-    <section id="cocurricular" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="cocurricular" className="scroll-mt-28 mb-28">
+    {/* <section id="cocurricular" className="scroll-mt-28 mb-28"> */}
       <SectionHeading>My co-curricular</SectionHeading>
       <div>
         {cocurricularData.map((cocurricular, index) => (

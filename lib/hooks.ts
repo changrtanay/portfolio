@@ -1,21 +1,48 @@
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import type { SectionName } from "./types";
 
-export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
-  const { ref, inView } = useInView({
-    threshold,
-  });
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+// export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
+//   const { ref, inView } = useInView({
+//     threshold,
+//   });
+//   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+//   useEffect(() => {
+//     if (inView && Date.now() - timeOfLastClick > 1000) {
+//       setActiveSection(sectionName);
+//     }
+//   }, [inView, setActiveSection, timeOfLastClick, sectionName]);
+
+//   return {
+//     ref,
+//   };
+// }
+// useSectionInView.ts
+export function useSectionInView(
+  sectionName: SectionName,
+  threshold = 0.5
+) {
+  const ref = useRef<HTMLElement | null>(null);
+  const { setActiveSection, timeOfLastClick } =
+    useActiveSectionContext();
 
   useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection(sectionName);
-    }
-  }, [inView, setActiveSection, timeOfLastClick, sectionName]);
+    if (!ref.current) return;
 
-  return {
-    ref,
-  };
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && Date.now() - timeOfLastClick > 1000) {
+          setActiveSection(sectionName);
+        }
+      },
+      { threshold }
+    );
+
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [sectionName, setActiveSection, timeOfLastClick]);
+
+  return { ref };
 }
