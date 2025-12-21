@@ -145,17 +145,17 @@ export const researchData = [
     title: "Adaptive Precision Agriculture Network",
     description:
       "Proposed an AI-driven system integrating IoT and robotics to enhance crop yield, improve soil health, and boost resource efficiency.",
-    tags: [""],
+    tags: ["6th Doctoral Symposium on Computational Intelligence"],
     imageUrl: z61,
-    link: "",
+    link: "https://drive.google.com/file/d/19SQokaZJvA_QPJQVQU5QDlPww3CRGgAv/view?usp=sharing",
   },
   {
-    title: "Lung Cancer Early Detection Framework",
+    title: "Early Detection of Lung Cancer",
     description:
       "Designed a decision tree-based diagnostic model with 94% accuracy to detect lung cancer at an early stage.",
     tags: [""],
     imageUrl: n11,
-    link: "",
+    link: "https://drive.google.com/file/d/1soZutjrk2lNtkbYLaagaW0G2rfey_rP-/view?usp=sharing",
   },
 ] as const;
 
