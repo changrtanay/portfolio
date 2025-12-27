@@ -13,7 +13,7 @@ import { SiCodeforces } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
