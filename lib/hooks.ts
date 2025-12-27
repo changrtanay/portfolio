@@ -21,8 +21,7 @@ import type { SectionName } from "./types";
 // }
 // useSectionInView.ts
 export function useSectionInView(
-  sectionName: SectionName,
-  threshold = 0.5
+  sectionName: SectionName
 ) {
   const ref = useRef<HTMLElement | null>(null);
   const { setActiveSection, timeOfLastClick } =
@@ -33,11 +32,18 @@ export function useSectionInView(
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && Date.now() - timeOfLastClick > 1000) {
+        if (
+          entry.isIntersecting &&
+          Date.now() - timeOfLastClick > 1000
+        ) {
           setActiveSection(sectionName);
         }
       },
-      { threshold }
+      {
+        // 👇 key change
+        rootMargin: "-40% 0px -60% 0px",
+        threshold: 0,
+      }
     );
 
     observer.observe(ref.current);
