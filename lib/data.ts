@@ -147,7 +147,7 @@ export const researchData = [
       "Proposed an AI-driven system integrating IoT and robotics to enhance crop yield, improve soil health, and boost resource efficiency.",
     tags: ["6th Doctoral Symposium on Computational Intelligence"],
     imageUrl: z61,
-    link: "https://drive.google.com/file/d/19SQokaZJvA_QPJQVQU5QDlPww3CRGgAv/view?usp=sharing",
+    link: "https://link.springer.com/chapter/10.1007/978-981-96-8104-4_23",
   },
   {
     title: "Early Detection of Lung Cancer",
@@ -155,7 +155,7 @@ export const researchData = [
       "Designed a decision tree-based diagnostic model with 94% accuracy to detect lung cancer at an early stage.",
     tags: [""],
     imageUrl: n11,
-    link: "https://drive.google.com/file/d/1soZutjrk2lNtkbYLaagaW0G2rfey_rP-/view?usp=sharing",
+    link: "https://www.springerprofessional.de/en/a-robust-decision-tree-framework-for-lung-cancer-diagnosis-asses/51954956",
   },
 ] as const;
 
