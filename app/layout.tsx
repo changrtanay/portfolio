@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Tanay | Personal Portfolio",
   description: "Tanay Changoiwala",
+  verification: {
+    google: "Jf-ibs0v5f0NsTc1jm3eS8cKRrHWNsy6ZStjs-RXncI",
+  },
 };
 
 export default function RootLayout({
