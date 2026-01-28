@@ -12,6 +12,9 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  applicationName: "Tanay Changoiwala",
+  creator: "Tanay Changoiwala",
+  publisher: "Tanay Changoiwala",
   title: {
     default: "Tanay Changoiwala",
     template: "%s | Tanay Changoiwala",
@@ -31,6 +34,7 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
+    icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
