@@ -44,7 +44,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Kalinga Institute of Industrial Technology",
-    location: "CGPA: 8.6",
+    location: "CGPA: 8.67",
     description:
       "Awarded KIITEE Merit Scholarship for academic excellence and consistent performance.",
     icon: React.createElement(LuGraduationCap),
