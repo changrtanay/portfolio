@@ -75,7 +75,7 @@ export const experiencesData = [
     description:
       "Developed a legal research platform powered by AI that allows semantic search, automated summarization, and conversational querying of Indian court judgements.",
     icon: React.createElement(CgWorkAlt),
-    date: "May 2024 - July 2024",
+    date: "May 2026 - July 2026",
     link: "https://github.com/changrtanay/Suits-demo",
   },
   // {
