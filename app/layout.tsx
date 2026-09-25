@@ -14,7 +14,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   applicationName: "Tanay Changoiwala",
   creator: "Tanay Changoiwala",
+  authors: [{ name: "Tanay Changoiwala" }],
   publisher: "Tanay Changoiwala",
+  alternates: {
+    canonical: "https://tanaychangoiwala.vercel.app",
+  },
   title: {
     default: "Tanay Changoiwala",
     template: "%s | Tanay Changoiwala",
@@ -51,21 +55,29 @@ export default function RootLayout({
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <Script
-          id="schema-person"
+          id="schema-profile"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Tanay Changoiwala",
-              url: "https://tanaychangoiwala.vercel.app",
-              sameAs: [
-                "https://www.linkedin.com/in/tanaychangoiwala/",
-                "https://github.com/changrtanay",
-                "https://leetcode.com/u/changrtanay/",
-                "https://codeforces.com/profile/tanay092004"
-              ]
+              "@type": "ProfilePage",
+              "@id": "https://tanaychangoiwala.vercel.app/#profile",
+              mainEntity: {
+                "@type": "Person",
+                "@id": "https://tanaychangoiwala.vercel.app/#person",
+                name: "Tanay Changoiwala",
+                url: "https://tanaychangoiwala.vercel.app",
+                jobTitle: "Computer Science Engineering Student",
+                description:
+                  "Hello, I'm Tanay Changoiwala. I'm a CSE Student. I like building impactful applications that solve real-world problems.",
+                sameAs: [
+                  "https://www.linkedin.com/in/tanaychangoiwala/",
+                  "https://github.com/changrtanay",
+                  "https://leetcode.com/u/changrtanay/",
+                  "https://codeforces.com/profile/tanay092004",
+                ],
+              },
             }),
           }}
         />
